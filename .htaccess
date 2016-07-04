@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+
+	RewriteRule ^index/?$ index.php
+	RewriteRule ^([0-9]+)$ ?id=$1
+	RewriteRule ^([0-9]+)/$ ?id=$1
+
+</IfModule>
